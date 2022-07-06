@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefae0;
+  font-family: 'Inter', sans-serif;
+  color: #323232;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 0 10vw;
+  min-height: 4.5rem;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+#header-img {
+  width: 60px;
+}
+
+#header-text {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.5rem;
+}
+
+nav {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#product {
+  margin-top: 100px;
+}
