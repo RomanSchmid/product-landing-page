@@ -21,9 +21,21 @@ body {
   position: relative;
 }
 
+.container {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 a {
   color: #000;
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Reusables ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
@@ -47,22 +59,26 @@ a {
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Header ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 header {
+  position: fixed;
+  top: 0;
   width: 100%;
+  min-height: 100px;
+  display: flex;
+  background-color: var(--main-color);
+  padding: 0.4rem;
+}
+
+.nav-bar {
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  padding: 0 14vw;
-  min-height: 100px;
-  background-color: var(--main-color);
-  z-index: 1;
 }
 
-@media (max-width: 600px) {
-  header {
-    flex-wrap: wrap;
-  }
+.logo {
+  display: flex;
 }
 
 #header-img {
@@ -74,11 +90,6 @@ header {
   font-size: 3.5rem;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
 nav {
   font-family: 'Amatic SC', cursive;
   font-weight: 700;
@@ -86,7 +97,6 @@ nav {
 }
 
 nav ul {
-  width: 30vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -94,14 +104,6 @@ nav ul {
 }
 
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Header ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
-
-.container {
-  position: relative;
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 15px;
-}
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Hero Section ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
