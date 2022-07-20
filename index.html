@@ -5,49 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script defer src="script.js"></script>
+
     <title>Product Landing Page</title>
 </head>
 <body>
     <div id="page-wrapper">
-
         <header id="header">
-            <div class="logo">
-            <img id="header-img" src="https://cdn-icons-png.flaticon.com/512/7577/7577239.png" alt="Picture of a cat">
-            <h1 id="header-text">Cat food</h1>
-            </div>
+            <a class="logo-link" href="index.html">
+                <div class="logo">
+                    <img id="header-img" src="https://cdn-icons-png.flaticon.com/512/7577/7577239.png" alt="Picture of a cat">
+                    <h1 id="header-text">Catnip</h1>
+                </div>
+            </a>
 
             <nav id="nav-bar">
-            <ul>
-            <li><a class="nav-link" href="#product">Product</a></li>
-            <li><a class="nav-link" href="#benefits">Benefits</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+                <ul>
+                    <li><a class="nav-link" href="#product">Product</a></li>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
             </nav>
         </header>
-        <div class="container">
-            <section id="product">
-            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-            </section>
 
-            <section id="benefits">
-            <iframe 
-                id="video" 
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/uxlHRjWS_CQ" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe> 
-            </section>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input id="email" type="email" name="email" placeholder="Enter your email" required>
-                <input id="submit" type="submit">
-            </form>
-            <section id="contact">
-            
-            </section>
-        </div>
+        <main>
+            <div class="container">
+                <section id="hero">
+                    <h2>Make your cat's pupils wider</h2>
+                    <form id="form" action="/" method="get">
+                        <input name="email" id="email" type="email" placeholder="Enter your emial address" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div class="cat-paw-img">
+                        <img src="img/cat-paw.svg" alt="">
+                    </div>
+                    <div class="cat-img">
+                        <img src="img/cat.svg" alt="">
+                    </div>
+                </section>
+
+                <section id="product">
+                    <div class="heading">
+                        <h2>ABOUT THE PRODUCT</h2>
+                        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                    </div>
+                    <iframe 
+                    id="video" 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/uxlHRjWS_CQ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe> 
+                </section>
+    
+                <section id="features">
+                    <div class="heading">
+                        <h2>Features</h2>
+                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature feature-1">
+                            <div class="feature-num">#1</div>
+                            <div class="feature-description">
+                                <p>Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+                            </div>
+                        </div>
+                        <div class="feature feature-2">
+                            <div class="feature-num">#2</div>
+                            <div class="feature-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="feature feature-3">
+                            <div class="feature-num">#3</div>
+                            <div class="feature-description">
+                                <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt.</p>
+                            </div>
+                        </div>
+                        <div class="feature feature-4">
+                            <div class="feature-num">#4</div>
+                            <div class="feature-description">
+                                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                            </div>
+                        </div>
+                        <div class="feature feature-5">
+                            <div class="feature-num">#5</div>
+                            <div class="feature-description">
+                                <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                            </div>
+                        </div>
+                        <div class="feature feature-6">
+                            <div class="feature-num">#6</div>
+                            <div class="feature-description">
+                                <p>Donec sollicitudin molestie malesuada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="pricing">
+                    <div class="heading">
+                        <h2>Pricing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                    </div>
+
+                    <div class="price-tabs">
+                        <div class="price price-1">
+                            <div class="price-heading">
+                                <h3>First Trip</h3>
+                            </div>
+                            <div class="price-description">
+                                <p>50 g</p>
+                                <div class="img-box">
+                                    <img src="img/box-one.svg" alt="">
+                                </div>
+                                <h4>$9</h4>
+                                <button type="submit" class="price-btn">Choose</button>
+                            </div>
+                        </div>
+                        <div class="price price-2">
+                            <div class="price-heading">
+                                <h3>More</h3>
+                            </div>
+                            <div class="price-description">
+                                <p>150 g</p>
+                                <div class="img-box">
+                                    <img src="img/box-four.svg" alt="">
+                                </div>
+                                <h4>$19</h4>
+                                <button type="submit" class="price-btn">Choose</button>
+                            </div>
+                        </div>
+                        <div class="price price-3">
+                            <div class="price-heading">
+                                <h3>Junkie!</h3>
+                            </div>
+                            <div class="price-description">
+                                <p>400 g</p>
+                                <div class="img-box">
+                                    <img src="img/box-nine.svg" alt="">
+                                </div>
+                                <h4>$39</h4>
+                                <button type="submit" class="price-btn">Choose</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="socials">
+                <a href="#"><img src="img/icon-instagram.svg" alt="Instagram icon"></a>
+                <a href="#"><img src="img/icon-facebook.svg" alt="Facebook icon"></a>
+                <a href="#"><img src="img/icon-twitter.svg" alt="Twitter icon"></a>
+                <a href="#"><img src="img/icon-youtube.svg" alt="Twitter icon"></a>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Term of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-rights">
+                <p>Copyright © 2022. All rights reserved</p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
