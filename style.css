@@ -183,24 +183,6 @@ nav ul {
   width: 110px;
 }
 
-@media only screen and (max-width: 768px) {
-  .cat-paw-img img {
-    display: none;
-  }
-
-  .cat-img img {
-    display: none;
-  }
-
-  .footer-menu > ul {
-    flex-direction: column;
-  }
-
-  .nav-bar nav {
-    display: none;
-  }
-}
-
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Hero Section ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
 
 
@@ -303,9 +285,11 @@ nav ul {
 }
 
 .price-tabs {
+  width: 100%;
   margin-top: 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
@@ -363,9 +347,9 @@ nav ul {
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Footer ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
 footer {
+  width: 100%;
   margin-top: 100px;
   padding: 10px;
-  height: 25vh;
   background-color: var(--light-green);
 }
 
@@ -422,3 +406,29 @@ footer {
 }
 
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Footer ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+@media only screen and (max-width: 768px) {
+  .cat-paw-img img {
+    display: none;
+  }
+
+  .cat-img img {
+    display: none;
+  }
+
+  .footer-menu > ul {
+    flex-direction: column;
+  }
+
+  .nav-bar nav {
+    display: none;
+  }
+
+  .price-tabs {
+    flex-direction: column;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
