@@ -1,0 +1,29 @@
+@media only screen and (max-width: 768px) {
+    .cat-paw-img img {
+      display: none;
+    }
+  
+    .cat-img img {
+      display: none;
+    }
+  
+    .footer-menu > ul {
+      flex-direction: column;
+    }
+  
+    .nav-bar nav {
+      display: none;
+    }
+  
+    .price-tabs {
+      flex-direction: column;
+    }
+  
+    .features-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .menu-btn {
+      display: flex;
+    }
+}
