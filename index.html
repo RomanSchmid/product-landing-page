@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/queries.css">
+    <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
+    <script defer src="src/scripts/script.js"></script>
 
     <title>Product Landing Page</title>
 </head>
@@ -20,18 +21,18 @@
                         <h1 id="header-text">Catnip</h1>
                     </div>
                 </a>
-    
-                <nav>
-                    <ul>
-                        <li><a class="nav-link" href="#product">Product</a></li>
-                        <li><a class="nav-link" href="#features">Features</a></li>
-                        <li><a class="nav-link" href="#pricing">Pricing</a></li>
-                    </ul>
-                </nav>
-                <div class="menu-btn">
+
+                <div class="menu-btn" onclick="navMenuFunction()">
                     <input type="checkbox" class="hamburger-btn">
                 </div>
             </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a class="nav-link" href="#product" onclick="navMenuFunction()">Product</a></li>
+                    <li><a class="nav-link" href="#features" onclick="navMenuFunction()">Features</a></li>
+                    <li><a class="nav-link" href="#pricing" onclick="navMenuFunction()">Pricing</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main>
@@ -43,10 +44,10 @@
                         <button type="submit">Submit</button>
                     </form>
                     <div class="cat-paw-img">
-                        <img src="img/cat-paw.svg" alt="">
+                        <img src="src/images/cat-paw.svg" alt="">
                     </div>
                     <div class="cat-img">
-                        <img src="img/cat.svg" alt="">
+                        <img src="src/images/cat.svg" alt="">
                     </div>
                 </section>
 
@@ -127,7 +128,7 @@
                             <div class="price-description">
                                 <p>50 g</p>
                                 <div class="img-box">
-                                    <img src="img/box-one.svg" alt="">
+                                    <img src="src/images/box-one.svg" alt="">
                                 </div>
                                 <h4>$9</h4>
                                 <button type="submit" class="price-btn">Choose</button>
@@ -140,7 +141,7 @@
                             <div class="price-description">
                                 <p>150 g</p>
                                 <div class="img-box">
-                                    <img src="img/box-four.svg" alt="">
+                                    <img src="src/images/box-four.svg" alt="">
                                 </div>
                                 <h4>$19</h4>
                                 <button type="submit" class="price-btn">Choose</button>
@@ -153,7 +154,7 @@
                             <div class="price-description">
                                 <p>400 g</p>
                                 <div class="img-box">
-                                    <img src="img/box-nine.svg" alt="">
+                                    <img src="src/images/box-nine.svg" alt="">
                                 </div>
                                 <h4>$39</h4>
                                 <button type="submit" class="price-btn">Choose</button>
@@ -166,10 +167,10 @@
 
         <footer>
             <div class="socials">
-                <a href="#"><img src="img/icon-instagram.svg" alt="Instagram icon"></a>
-                <a href="#"><img src="img/icon-facebook.svg" alt="Facebook icon"></a>
-                <a href="#"><img src="img/icon-twitter.svg" alt="Twitter icon"></a>
-                <a href="#"><img src="img/icon-youtube.svg" alt="Twitter icon"></a>
+                <a href="#"><img src="src/images/icon-instagram.svg" alt="Instagram icon"></a>
+                <a href="#"><img src="src/images/icon-facebook.svg" alt="Facebook icon"></a>
+                <a href="#"><img src="src/images/icon-twitter.svg" alt="Twitter icon"></a>
+                <a href="#"><img src="src/images/icon-youtube.svg" alt="Twitter icon"></a>
             </div>
             <div class="footer-menu">
                 <ul>

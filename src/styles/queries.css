@@ -11,10 +11,6 @@
       flex-direction: column;
     }
   
-    .nav-bar nav {
-      display: none;
-    }
-  
     .price-tabs {
       flex-direction: column;
     }
