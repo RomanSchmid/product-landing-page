@@ -107,12 +107,12 @@ nav ul {
   justify-content: center;
   gap: 15vw;
   height: 100vh;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 
 .menu-btn {
+  display: block;
   position: relative;
-  display: none;
   justify-content: center;
   align-items: center;
   width: 5em;
@@ -122,49 +122,14 @@ nav ul {
   border-radius: 10px;
 }
 
-.hamburger-btn {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 50px;
-  height: 6px;
-  background-color: #121212;
-  border-radius: 5px;
-  transition: all 500ms ease-in-out;
-  outline: none;
+#hamburger-btn {
+  display: block;
 }
 
-.hamburger-btn:before,
-.hamburger-btn:after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 6px;
-  background-color: #121212;
-  border-radius: 5px;
-  transition: all 500ms ease-in-out;
+#xmark-btn {
+  display: none;
 }
 
-.hamburger-btn:before {
-  transform: translateY(-16px);
-}
-
-.hamburger-btn:after {
-  transform: translateY(16px);
-}
-
-.hamburger-btn:checked {
-  width: 0;
-  background: transparent;
-}
-
-.hamburger-btn:checked:before {
-  transform: rotate(45deg) translate(-18px, 18px);
-}
-
-.hamburger-btn:checked:after {
-  transform: rotate(-45deg) translate(-18px, -18px);
-}
 
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Header ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
 
