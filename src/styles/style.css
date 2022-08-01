@@ -96,6 +96,7 @@ header {
 }
 
 nav {
+  display: none;
   font-size: 4rem;
   text-align: center;
 }
@@ -128,11 +129,6 @@ nav ul {
 #xmark-btn {
   display: none;
 }
-
-#nav-menu {
-  display: none;
-}
-
 
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Header ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
 
