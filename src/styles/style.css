@@ -68,6 +68,8 @@ header {
   background-color: var(--main-color);
   padding: 0.4rem 1.1rem;
   z-index: 1;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
 }
 
 .nav-bar {
@@ -81,22 +83,20 @@ header {
 
 .logo {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #header-img {
-  width: 60px;
+  width: 70px;
 }
 
 #header-text {
-  font-family: 'Amatic SC', cursive;
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 nav {
-  display: none;
-  font-family: 'Amatic SC', cursive;
-  font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -110,7 +110,7 @@ nav ul {
 }
 
 .menu-btn {
-  display: block;
+  display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
