@@ -1,8 +1,11 @@
+let myHeader = document.querySelector("header");
+
 /* Switch between hamburger button with hidden navbar and xmark button with displayed navbar */
 function navMenuFunction() {
     let myLinks = document.getElementById("nav-menu");
     let hamBtn = document.getElementById("hamburger-btn");
     let xmarkBtn = document.getElementById("xmark-btn");
+
     if (myLinks.style.display === "block") {
         myLinks.style.display = "none";
         hamBtn.style.display = "block"
@@ -15,13 +18,23 @@ function navMenuFunction() {
 }
 
 /* Hide the navbar when scrolled down. Show the navbar when scrolled up */
-var prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-        document.querySelector("header").style.top = "0";
+        myHeader.style.top = "0";
+        myHeader.style.boxShadow = "0 0 15px var(--light-green)";
     } else {
-        document.querySelector("header").style.top = "-100px";
+        myHeader.style.top = "-100px";
     }
     prevScrollpos = currentScrollPos;
+    if (prevScrollpos === 0) {
+        myHeader.style.boxShadow = "none";
+    }
 }
+
+/* let navLinks = document.querySelector(".nav-link");
+navLinks.addEventListener("click", setTimeout(() => {
+    myHeader.style.top = "-100px";
+    console.log("hello");
+}, 500)); */

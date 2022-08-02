@@ -25,8 +25,19 @@ body {
   position: relative;
   max-width: 1000px;
   width: 100%;
-  margin: 180px auto;
+  margin: 240px auto;
   padding: 0 20px;
+}
+
+h1, h2 {
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  opacity: 0.8;
+  text-shadow: 2px 2px 3px rgb(87, 86, 86);
+}
+
+h2 {
+  font-size: 4.6rem;
 }
 
 a {
@@ -39,15 +50,19 @@ li {
 }
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Reusables ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-.heading {
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-top: 130px;
+  margin-top: 100px;
 }
 
-.heading h2 {
-  font-size: 3rem;
-  color: black;
-  opacity: 0.8;
+.heading {
+  text-align: center;
+  margin-top: 60px;
 }
 
 .heading p {
@@ -67,7 +82,7 @@ header {
   transition: top 350ms;
   width: 100%;
   background-color: var(--main-color);
-  padding: 0.4rem 1.1rem;
+  padding: 0.4rem 1rem;
   z-index: 1;
   font-family: 'Amatic SC', cursive;
   font-weight: 700;
@@ -88,12 +103,13 @@ header {
   align-items: center;
 }
 
-#header-img {
-  width: 70px;
+.logo > img {
+  width: 65px;
 }
 
-#header-text {
+.logo > h1 {
   font-size: 4rem;
+  margin-left: 10px;
 }
 
 nav {
@@ -121,6 +137,7 @@ nav ul {
   cursor: pointer;
   transition: all 500ms ease-in-out;
   border-radius: 10px;
+  opacity: 0.7;
 }
 
 #hamburger-btn {
@@ -146,7 +163,6 @@ nav ul {
 
 #hero h2 {
   font-size: 5rem;
-  font-family: 'Amatic SC', cursive;
 }
 
 #hero form {
@@ -223,14 +239,6 @@ nav ul {
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Product Section ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
-#product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 .heading::after {
   content: "";
   display: block;
@@ -271,14 +279,6 @@ nav ul {
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Features Section ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
-#features {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 .features-grid {
   width: 100%;
   padding: 20px;
@@ -312,14 +312,6 @@ nav ul {
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Features Section ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pricing Section ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-
-#pricing {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 
 .price-tabs {
   width: 100%;
@@ -398,6 +390,7 @@ footer {
   align-items: center;
   gap: 30px;
   position: relative;
+  opacity: 0.9;
 }
 
 .socials::after {
@@ -422,9 +415,10 @@ footer {
 }
 
 .footer-menu > ul > li {
-  padding: 0 30px;
+  padding: 5px 30px;
   list-style: none;
   color: white;
+  opacity: 0.8;
 }
 
 .footer-menu > ul > li > a {
