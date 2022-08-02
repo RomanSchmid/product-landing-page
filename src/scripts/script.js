@@ -1,3 +1,4 @@
+/* Switch between hamburger button with hidden navbar and xmark button with displayed navbar */
 function navMenuFunction() {
     let myLinks = document.getElementById("nav-menu");
     let hamBtn = document.getElementById("hamburger-btn");
@@ -11,4 +12,16 @@ function navMenuFunction() {
         hamBtn.style.display = "none";
         xmarkBtn.style.display = "block";
     }
+}
+
+/* Hide the navbar when scrolled down. Show the navbar when scrolled up */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.querySelector("header").style.top = "0";
+    } else {
+        document.querySelector("header").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
 }
