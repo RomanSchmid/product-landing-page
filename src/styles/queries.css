@@ -7,9 +7,9 @@
       display: none;
     }
   
-    .footer-menu > ul {
+    /* .footer-menu > ul {
       flex-direction: column;
-    }
+    } */
   
     .price-tabs {
       flex-direction: column;
