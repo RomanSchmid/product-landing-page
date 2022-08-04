@@ -25,19 +25,16 @@ body {
   position: relative;
   max-width: 1000px;
   width: 100%;
-  margin: 220px auto;
+  margin-top: 220px;
   padding: 0 20px;
 }
 
 h1, h2, .feature-num {
   font-family: 'Amatic SC', cursive;
+  font-weight: 700;
   color: black;
   opacity: 0.8;
   text-shadow: 2px 2px 3px rgb(87, 86, 86);
-}
-
-h2 {
-  font-size: 4.6rem;
 }
 
 a {
@@ -61,13 +58,14 @@ li {
 
 .heading {
   text-align: center;
+  font-size: 3.6rem;
   margin-top: 60px;
 }
 
 .heading p {
   margin-top: 25px;
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   opacity: 0.8;
 }
 
@@ -108,7 +106,6 @@ header {
 .nav-bar {
   max-width: 80rem;
   width: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,10 +115,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.logo > img {
-  width: 70px;
 }
 
 .logo > h1 {
@@ -217,19 +210,10 @@ nav ul {
  top: 260px;
 }
 
-.cat-paw-img img {
-  width: 160px;
-  opacity: 0.8;
-}
-
 .cat-img {
   position: absolute;
   right: 10px;
   top: 250px;
-}
-
-.cat-img img {
-  width: 110px;
 }
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Hero Section ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
 
@@ -274,11 +258,10 @@ nav ul {
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Features Section ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 .features-grid {
-  width: 100%;
-  padding: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  padding: 20px;
 }
 
 .feature {
@@ -290,15 +273,10 @@ nav ul {
 
 .feature-num {
   font-size: 3rem;
-  font-weight: 700;
-  font-family: 'Amatic SC', cursive;
 }
 
 .feature p {
   text-align: left;
-}
-
-.feature p {
   margin-top: 8px;
   opacity: 0.8;
 }
@@ -307,11 +285,11 @@ nav ul {
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pricing Section ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 .price-tabs {
   width: 100%;
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding-block: 50px;
 }
 
 .price {
@@ -362,21 +340,17 @@ nav ul {
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Footer ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 footer {
-  width: 100%;
-  margin-top: 100px;
-  padding: 10px;
+  margin-top: 140px;
   background-color: var(--light-green);
 }
 
 .socials {
-  padding: 30px;
-  margin: 0 auto;
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 30px;
-  position: relative;
+  gap: 40px;
   opacity: 0.9;
+  padding: 35px 0 30px 0;
 }
 
 .socials::after {
@@ -389,21 +363,16 @@ footer {
   z-index: 2;
 }
 
-.footer-menu {
-  display: table;
-  margin: 30px auto 0 auto;
-}
-
 .footer-menu > ul {
+  padding-block: 40px;
   display: flex;
-  text-align: center;
+  justify-content: center;
   line-height: 1.5rem;
 }
 
-.footer-menu > ul > li {
-  list-style: none;
+.footer-menu > ul > li, .footer-menu > ul > li > a {
   color: white;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .footer-menu li + li::before {
@@ -411,19 +380,14 @@ footer {
   padding: 1rem;
 }
 
-.footer-menu > ul > li > a {
-  color: white;
-}
-
 .footer-rights {
-  display: table;
-  margin: 20px auto 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-rights p {
+  padding-bottom: 20px;
   color: white;
   opacity: 0.4;
-  text-align: center;
-  margin-bottom: 10px;
 }
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Footer ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
