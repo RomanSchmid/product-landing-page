@@ -33,13 +33,19 @@ window.onscroll = function() {
 }
 
 /* Hide the navbar after click on any navbar link */
-let navLinks = document.querySelectorAll(".nav-link");
-console.log(navLinks);
-navLinks.forEach(element => {
+let visibleNavLinks = document.querySelectorAll("#nav-menu-visible .nav-link");
+visibleNavLinks.forEach(element => {
     element.addEventListener("click", () => {
-        setTimeout(() => {
-            myHeader.style.top = "-100px";
-            console.log("hello");
-        }, 0)     
+        myHeader.style.top = "-100px";   
+    })
+});
+
+let hiddenNavLinks = document.querySelectorAll("#nav-menu-hidden .nav-link");
+hiddenNavLinks.forEach(element => {
+    element.addEventListener("click", () => {
+        myLinks.style.display = "none";
+        hamBtn.style.display = "block"
+        xmarkBtn.style.display = "none";
+        myHeader.style.top = "-100px";
     })
 });
