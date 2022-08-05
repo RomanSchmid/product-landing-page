@@ -36,16 +36,20 @@ window.onscroll = function() {
 let visibleNavLinks = document.querySelectorAll("#nav-menu-visible .nav-link");
 visibleNavLinks.forEach(element => {
     element.addEventListener("click", () => {
-        myHeader.style.top = "-100px";   
+        setTimeout(() => {
+            myHeader.style.top = "-100px";
+        }, 50);   
     })
 });
 
 let hiddenNavLinks = document.querySelectorAll("#nav-menu-hidden .nav-link");
 hiddenNavLinks.forEach(element => {
     element.addEventListener("click", () => {
-        myLinks.style.display = "none";
-        hamBtn.style.display = "block"
-        xmarkBtn.style.display = "none";
-        myHeader.style.top = "-100px";
+        setTimeout(() => {
+            myLinks.style.display = "none";
+            hamBtn.style.display = "block"
+            xmarkBtn.style.display = "none";
+            myHeader.style.top = "-100px";
+        }, 50);
     })
 });
