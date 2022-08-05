@@ -347,6 +347,8 @@ nav ul {
 .price-description p {
   margin-top: 10px;
   font-weight: 700;
+  font-size: 1.5rem;
+  opacity: 0.8;
 }
 
 .img-box {
@@ -362,7 +364,8 @@ nav ul {
 
 .price-description h4 {
   margin-top: 20px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  opacity: 0.8;
 }
 
 #pricing button {
