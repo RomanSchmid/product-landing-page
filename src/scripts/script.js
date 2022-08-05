@@ -1,21 +1,20 @@
 let myHeader = document.querySelector("header");
+let myLinks = document.getElementById("nav-menu-hidden");
+let hamBtn = document.getElementById("hamburger-btn");
+let xmarkBtn = document.getElementById("xmark-btn");
 
 /* Switch between hamburger button with hidden navbar and xmark button with displayed navbar */
-function navMenuFunction() {
-    let myLinks = document.getElementById("nav-menu");
-    let hamBtn = document.getElementById("hamburger-btn");
-    let xmarkBtn = document.getElementById("xmark-btn");
+hamBtn.addEventListener("click", () => {
+    myLinks.style.display = "block";
+    hamBtn.style.display = "none";
+    xmarkBtn.style.display = "block";
+})
 
-    if (myLinks.style.display === "block") {
-        myLinks.style.display = "none";
-        hamBtn.style.display = "block"
-        xmarkBtn.style.display = "none";
-    } else {
-        myLinks.style.display = "block";
-        hamBtn.style.display = "none";
-        xmarkBtn.style.display = "block";
-    }
-}
+xmarkBtn.addEventListener("click", () => {
+    myLinks.style.display = "none";
+    hamBtn.style.display = "block"
+    xmarkBtn.style.display = "none";
+})
 
 /* Hide the navbar when scrolled down. Show the navbar when scrolled up */
 let prevScrollpos = window.pageYOffset;

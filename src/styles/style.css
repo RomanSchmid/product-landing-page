@@ -25,7 +25,7 @@ body {
   position: relative;
   max-width: 1000px;
   width: 100%;
-  margin-top: 220px;
+  margin: 220px auto 0 auto;
   padding: 0 20px;
 }
 
@@ -38,7 +38,6 @@ h1, h2, .feature-num {
 }
 
 a {
-  color: #000;
   text-decoration: none;
 }
 
@@ -60,6 +59,15 @@ li {
   text-align: center;
   font-size: 3.6rem;
   margin-top: 60px;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 5px solid var(--light-green);
+  opacity: 0.3;
+  margin: 24px auto;
 }
 
 .heading p {
@@ -106,6 +114,7 @@ header {
 .nav-bar {
   max-width: 80rem;
   width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,13 +127,28 @@ header {
 }
 
 .logo > h1 {
-  font-size: 4rem;
-  margin-left: 10px;
+  font-size: 3.8rem;
+  margin-left: 15px;
 }
 
-nav {
+.logo > h1:hover,
+.logo > h1:active {
+    transition: text-shadow 500ms;
+    text-shadow: 5px 5px 5px rgb(87, 86, 86);
+}
+
+#nav-menu-visible {
+  display: none;
+  font-size: 3rem;
+  text-shadow: 2px 2px 3px rgb(87, 86, 86);
+  opacity: 0.8;
+}
+
+#nav-menu-hidden {
   display: none;
   font-size: 4rem;
+  text-shadow: 2px 2px 3px rgb(87, 86, 86);
+  opacity: 0.8;
   text-align: center;
 }
 
@@ -135,6 +159,16 @@ nav ul {
   gap: 15vw;
   height: 100vh;
   padding-bottom: 150px;
+}
+
+#nav-menu-visible ul li a {
+  color: #000;
+}
+
+#nav-menu-visible ul li a:hover,
+#nav-menu-visible ul li a:active {
+    transition: text-shadow 500ms;
+    text-shadow: 5px 5px 5px rgb(87, 86, 86);
 }
 
 .menu-btn {
@@ -170,7 +204,7 @@ nav ul {
 }
 
 #hero h2 {
-  font-size: 5rem;
+  font-size: 5.5rem;
 }
 
 #hero form {
@@ -205,12 +239,14 @@ nav ul {
 }
 
 .cat-paw-img {
- position: absolute;
- left: 10px;
- top: 260px;
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 260px;
 }
 
 .cat-img {
+  display: none;
   position: absolute;
   right: 10px;
   top: 250px;
@@ -219,15 +255,6 @@ nav ul {
 
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Product Section ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-.heading::after {
-  content: "";
-  display: block;
-  width: 150px;
-  border-bottom: 5px solid var(--light-green);
-  opacity: 0.3;
-  margin: 24px auto;
-}
-
 .iframe-container {
   position: relative;
   overflow: hidden;
@@ -259,7 +286,7 @@ nav ul {
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Features Section ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
   padding: 20px;
 }
@@ -286,6 +313,7 @@ nav ul {
 .price-tabs {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -296,11 +324,19 @@ nav ul {
   width: 280px;
   text-align: center;
   border: 1px solid var(--dark-green);
+  border: 2px solid var(--light-green);
+  box-shadow: 0 0 10px var(--light-green);
+}
+
+.price:hover {
+  transition: box-shadow 500ms;
+  box-shadow: 10px 10px 10px var(--light-green);
 }
 
 .price-heading {
-  background-color: rgba(96, 108, 56, 0.6);
+  background-color: var(--light-green);
   padding: 15px;
+  color: white;
 }
 
 .price-description {
